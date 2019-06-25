@@ -1,7 +1,9 @@
-Some scripts to simplify common tasks for the nvidia jetson nano board
+
+Some scripts to simplify common tasks for the nvidia jetson nano board.
 
 
-All scripts assumes you are running Ubuntu 18.04 both locally and on the nano.
+NOTE: 
 
+* All scripts assumes you are running Ubuntu 18.04 both locally and on the nano.
 
-Make sure you run the scripts in correct order!
+* Make sure you run the scripts in correct order!

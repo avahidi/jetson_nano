@@ -7,20 +7,19 @@ set -e
 
 sudo apt update
 
-# get the minimal stuff we need to
+# start with the firewall
 sudo apt install -y ufw
-sleep 5
-sudo ufw enable
-sleep 5
 sudo ufw allow ssh
 sudo ufw logging off
 
+# sometimes ufw enable fails for unknown reasons
+sleep 5
+sudo ufw enable || sudo ufw enable || echo "Try enabling ufw later..."
+
+
 # remove stuff we don't need and add some we need
-sudo apt remove -y libreoffice-* gnome-games gnome-calendar cheese deja-dup shotwell rhythmbox
- simple-scan thunderbird transmission-gtk activity-log-manager 
-
-sudo apt remove -y unity-lens-photos *geocodeglib* aisleriot eog gnome-mines gnome-sudoku totem gnome-todo || echo cleanup failed
-
+sudo apt remove -y -m libreoffice-* gnome-games gnome-calendar cheese deja-dup shotwell rhythmbox
+ simple-scan thunderbird transmission-gtk activity-log-manager unity-lens-photos *geocodeglib* aisleriot eog gnome-mines gnome-sudoku totem gnome-todo || echo cleanup failed
 
 sudo apt install -y openssh-server git wget mg tmux
 
