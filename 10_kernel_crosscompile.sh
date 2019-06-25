@@ -76,5 +76,6 @@ EOF
 
 lxc file pull $NAME/kernel.tar.gz tmp/
 
+lxc delete -f $NAME
 
 
