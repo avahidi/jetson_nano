@@ -21,7 +21,7 @@ sudo ufw enable || sudo ufw enable || echo "Try enabling ufw later..."
 sudo apt remove -y -m libreoffice-* gnome-games gnome-calendar cheese deja-dup shotwell rhythmbox
  simple-scan thunderbird transmission-gtk activity-log-manager unity-lens-photos *geocodeglib* aisleriot eog gnome-mines gnome-sudoku totem gnome-todo || echo cleanup failed
 
-sudo apt install -y openssh-server git wget mg tmux
+sudo apt install -y openssh-server git wget mg tmux lm-sensors
 
 # update and cleanup
 sudo apt upgrade -y

@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # This will compile a new kernel
-# (this runs inside a LXC container on your local PC)
+#
+# Note: This runs inside a LXC container on your local PC
 
 set -e
 
